@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "canadacentral"
+        },
+        "networkInterfaceName": {
+            "value": "table1twcoreosvm262"
+        },
+        "networkSecurityGroupName": {
+            "value": "table1twcoreosvm-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "virtualNetworkName": {
+            "value": "table1tawcentosrg-vnet"
+        },
+        "addressPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "table1twcoreosvm-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "table1twcoreosvm"
+        },
+        "virtualMachineRG": {
+            "value": "table1tawcentosrg"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "azureops"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDE72JPDYMM6werBsxA5S4idKJVe2rIxzfO9zeIe8wrQIwv3xto+3VJx3ltczPHgBfK2oXbUr7owWYcTXn/3zwy1ub9q7vvUhY/JKroncqiBvZ/MQIdegaiFP92wpg1R6Tt3JNDKvP40GMKfLBppquqlvWj0JnF3lBqd5X+t/JSuH+kxDokK+TrqFNP8YAjyAencqh0bcrBEA6PVU1BmVEK4f7+J0HYsbomZq8xhZdefC0wh5JFiJI9Z6kQWHoP2TC5ohGGa0mpB3AlkeJlwJkMkUDeyhEZ5+0hG4QOzqBAzs8UbQ2x8IesxSXm8kghqT9s43WeFI2EPl+jKmEek/u5"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "table1tawcentosrgdiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/table1tawcentosrgdiag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        }
+    }
+}
