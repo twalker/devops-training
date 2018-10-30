@@ -1,0 +1,5 @@
+#cloud-config
+package_upgrade: true
+runcmd:
+  - apt-get install nginx
+  - sudo waagent -deprovision+user -force
